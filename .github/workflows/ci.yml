@@ -26,7 +26,7 @@ jobs:
         
 
       - name: Install Playwright dependencies
-        run: npx playwright install chromium --with-deps
+        run: npx playwright install  --with-deps
         
         
       - name: 2. Build Docker image
