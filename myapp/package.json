@@ -19,7 +19,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "playwright"
+    "test": "playwright test"
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0",
