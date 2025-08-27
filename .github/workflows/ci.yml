@@ -26,6 +26,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./src # Add this line, assuming your package.json is in a 'src' directory
 
       - name: Run tests
         run: npm test
+        working-directory: ./src # Also add this line
