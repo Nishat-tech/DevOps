@@ -13,7 +13,10 @@ export class Header {
 
   async clickLogo() {
     await expect(this.logoLink).toBeVisible();
+    //timeout
+    
     await this.logoLink.click();
+    await this.page.waitForTimeout(5000);
     await expect(this.logo).toBeVisible();
     await expect(this.logo).toHaveText('CNC Mart');
     await expect(this.page).toHaveURL(/https:\/\/cnc-mart.com\/?#?/);
