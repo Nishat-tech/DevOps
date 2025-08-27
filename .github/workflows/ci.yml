@@ -29,9 +29,17 @@ jobs:
         
 
       - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium firefox webkit 
+        run: npx playwright install chromium --with-deps
         
 
       - name: Run tests
         run: npm test
+
+      - name: 2. Build Docker image
+        run: docker build -t my-cnc-app:latest .
+        
+
+      - name: 3. Run automated tests
+        run: npm test
+        
         
