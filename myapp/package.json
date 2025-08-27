@@ -1,15 +1,25 @@
 {
-  "name": "cncwebapp",
-  "version": "1.0.0",
+  "name": "myapp",
+  "version": "0.1.0",
+  "private": true,
   "description": "",
   "main": "index.js",
-  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0",
